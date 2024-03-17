@@ -7,9 +7,20 @@ This generates a WASM plugin using [exitism] (https://github.com/extism/extism).
 ## Prerequisites
 Before running this code, you'll need to obtain an API key from ZipCodeStack. You can register for a free API key [here](https://app.zipcodestack.com/register). The free plan includes 10,000 requests per month.
 
+## Parameters
 ``` json
  { "apikey": "myapikey", "zipcode": "33162" }
  ```
+
+or use with optional country
+``` json
+ { "apikey": "myapikey", "zipcode": "33162", "country": "us" }
+ ```
+
+## BUILD
+``` javascipt
+extism-js plugin.js -i  -o plugin.wasm
+```
 
 ## Test with CLI
 ``` javascript
